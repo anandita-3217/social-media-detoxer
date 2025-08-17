@@ -1,0 +1,30 @@
+.content-feed-container{
+    padding: 20px;
+    text-align: center;
+}
+.content-feed-container h2{
+    color: white;
+}
+.replacement-feed{
+    background-color: #f0f8ff;
+    padding: 20px;
+    min-height: 100px;
+    border-radius: 10px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.replacement-feed p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+.content-feed-button{
+    background-color: #4caf50;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

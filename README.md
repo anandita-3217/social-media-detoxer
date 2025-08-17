@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Social Media Detox Helper 🚫📱
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React app that helps you break your social media addiction by replacing mindless scrolling with actually useful (and entertainingly passive-aggressive) content.
 
-## Available Scripts
+## What This Thing Does
 
-In the project directory, you can run:
+- **Replaces your doom-scrolling** with random facts, dad jokes, coding challenges, or motivational quotes
+- **Tracks time saved** from not scrolling through Instagram/TikTok/Twitter
+- **Converts saved time** into "productive things you could've done" metrics
+- **Provides gentle reality checks** about your digital habits (with humor, not judgment... okay maybe a little judgment)
 
-### `npm start`
+## Features (Planned)
 
-Runs the app in the development mode.\
+- [ ] Timer tracking for detox sessions
+- [ ] Random content feed (facts, jokes, coding tips)
+- [ ] Time-saved calculator with funny conversions
+- [ ] Progress tracking and stats
+- [ ] Motivational (but sarcastic) messages
+- [ ] "Relapse prevention" - warnings when you've been on the app too long
+
+## Tech Stack
+
+- React 19
+- CSS3 (keeping it simple for now)
+- External APIs for content (facts, jokes, etc.)
+- Local storage for tracking data
+
+## Installation
+
+```bash
+# Clone this repo
+git clone https://github.com/anandita-3217/social-media-detoxer
+cd social-media-detox-helper
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
+```
+
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Structure
 
-### `npm test`
+```
+src/
+  ├── components/
+  │   ├── Timer.js           # Tracks detox session time
+  │   ├── ContentFeed.js     # Random helpful/funny content
+  │   ├── StatsTracker.js    # Shows time saved & conversions
+  │   └── MotivationalNag.js # Gentle (firm) reality checks
+  ├── hooks/
+  │   └── useLocalStorage.js # Custom hook for persistence
+  ├── utils/
+  │   └── timeConversions.js # "You could've read 0.3 books"
+  ├── App.js
+  └── App.css
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Why I Built This
 
-### `npm run build`
+Because I realized I was spending more time watching 15-second videos of things that dont even intrest me than actually doing something productive. This app is my digital intervention - useful enough to actually help, funny enough to not feel like digital vegetables, and distraction to keep me away from my phone so i have something else to wrestle with
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contributing
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Found a bug? Want to add more sarcastic motivational messages? PRs welcome! Just remember: we're building a tool to help people, not judge them (too harshly).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- ## License
 
-### `npm run eject`
+MIT - Use this to save yourself and others from the scroll hole. -->
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*"The best time to stop mindless scrolling was yesterday. The second best time is right now."* - Ancient Proverb (probably)

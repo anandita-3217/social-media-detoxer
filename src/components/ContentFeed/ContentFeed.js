@@ -1,3 +1,4 @@
+// ContentFeed.js
 import { useState } from "react";
 import './ContentFeed.css';
 function ContentFeed(){
@@ -54,10 +55,12 @@ function ContentFeed(){
     };
     return (
         <div className="content-feed-container">
-            <h2>Your Scroll Replacement Feed</h2>
-            <div className="replacement-feed">
-                <p>{currentContent}</p>
+            <h2 className="content-feed-title">Your Scroll Replacement Feed</h2>
+            <div className="content-feed-input-section">
                 <button className="content-feed-button" onClick={getRandomContent} >{isLoading ? 'Getting your brain food... 🧠' : 'Give Me Something Better Than Social Media! 🎲'}</button>
+            </div>
+            <div className="content-feed-answer">
+                <p className="answer-text">{currentContent}</p>
             </div>
         </div>
     );

@@ -1,0 +1,27 @@
+.stats-container {
+  margin: 20px 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 15px;
+}
+
+.main-stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.stat-card {
+  text-align: center;
+  background: rgba(255,255,255,0.2);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.achievement {
+  background: rgba(255,255,255,0.1);
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}

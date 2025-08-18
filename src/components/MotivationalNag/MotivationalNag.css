@@ -1,0 +1,169 @@
+/* MotivationalNag Component Styles */
+.motivational-nag-container {
+  margin: 20px 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.nag-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.nag-header h3 {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+}
+
+.nag-header p {
+  margin: 0;
+  opacity: 0.8;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 16px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.nag-message {
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px 0;
+  text-align: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nag-message p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+/* Different styles for different nag levels */
+.nag-gentle {
+  background: rgba(76, 175, 80, 0.9);
+  border-left: 4px solid #4CAF50;
+}
+
+.nag-firm {
+  background: rgba(255, 193, 7, 0.9);
+  border-left: 4px solid #ffc107;
+  color: #333;
+}
+
+.nag-intervention {
+  background: rgba(244, 67, 54, 0.9);
+  border-left: 4px solid #f44336;
+  animation: shake 0.5s ease-in-out;
+}
+
+.nag-idle {
+  background: rgba(23, 162, 184, 0.9);
+  border-left: 4px solid #17a2b8;
+}
+
+.nag-celebration {
+  background: rgba(111, 66, 193, 0.9);
+  border-left: 4px solid #6f42c1;
+  animation: celebrate 0.6s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+@keyframes celebrate {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.nag-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.nag-buttons button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nag-buttons button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.nag-buttons button:active {
+  transform: translateY(0);
+}
+
+.motivation-btn {
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  color: white;
+}
+
+.celebration-btn {
+  background: linear-gradient(45deg, #28a745, #20c997);
+  color: white;
+}
+
+.dismiss-btn {
+  background: linear-gradient(45deg, #6c757d, #495057);
+  color: white;
+}
+
+.time-suggestion {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: center;
+  border: 1px dashed rgba(255, 255, 255, 0.3);
+}
+
+.time-suggestion p {
+  margin: 0;
+  font-size: 14px;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .nag-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nag-buttons button {
+    width: 100%;
+    max-width: 280px;
+  }
+}

@@ -1,45 +1,138 @@
+/* Timer Component Styles */
 .timer-container {
-  padding: 32px;
-  border: 3px solid #ea580c;
-  border-radius: 16px;
-  background: white;
-  box-shadow: 0 8px 32px rgba(234, 88, 12, 0.12);
-  max-width: 650px;
-  margin: 0 auto;
+  margin: 20px 0;
+  padding: 25px;
+  background: linear-gradient(135deg, #fd79a8 0%, #e84393 100%);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  color: white;
 }
-.timer-title {
-  color: #ea580c;
+
+.timer-container h2 {
   text-align: center;
-  margin-bottom: 12px;
-  font-size: 2.2rem;
-  font-weight: bold;
-  text-shadow: none;
+  margin-top: 0;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
-.timer-subtitle {
-  color: #64748b;
+
+.current-session {
   text-align: center;
-  margin-bottom: 28px;
-  font-style: normal;
-  font-size: 1.1rem;
+  margin-bottom: 25px;
 }
-.timer-input-section {
+
+.current-session h3 {
+  font-size: 28px;
+  margin: 15px 0;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.timer-buttons {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 24px;
+  gap: 15px;
   flex-wrap: wrap;
+  margin: 20px 0;
 }
 
 .timer-buttons button {
-  margin: 10px;
-  padding: 10px 20px;
+  padding: 12px 24px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-.start-btn { background-color: #4CAF50; color: white; }
-.stop-btn { background-color: #f44336; color: white; }
-.reset-btn { background-color: #008CBA; color: white; }
+.start-btn {
+  background: linear-gradient(45deg, #00b894, #00cec9);
+  color: white;
+}
+
+.start-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 184, 148, 0.4);
+}
+
+.stop-btn {
+  background: linear-gradient(45deg, #e17055, #d63031);
+  color: white;
+}
+
+.stop-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(214, 48, 49, 0.4);
+}
+
+.reset-btn {
+  background: linear-gradient(45deg, #74b9ff, #0984e3);
+  color: white;
+}
+
+.reset-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(9, 132, 227, 0.4);
+}
+
+.timer-buttons button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.total-saved {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.total-saved h3 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 22px;
+}
+
+.conversions {
+  margin-top: 15px;
+}
+
+.conversions h4 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.conversions ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.conversions li {
+  background: rgba(255, 255, 255, 0.2);
+  margin: 8px 0;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.motivation {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  text-align: center;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.8; }
+  50% { opacity: 1; }
+  100% { opacity: 0.8; }
+}

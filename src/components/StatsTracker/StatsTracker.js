@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react';
 import './StatsTracker.css';
+import { useState, useEffect } from 'react';
+
 function StatsTracker() {
   const [stats, setStats] = useState({
     totalSessions: 0,

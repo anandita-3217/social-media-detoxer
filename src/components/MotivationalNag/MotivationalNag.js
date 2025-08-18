@@ -1,5 +1,5 @@
+import './MotivationalNag.css';
 import { useState, useEffect } from 'react';
-import './MotivationalNag.css'
 function MotivationalNag() {
   const [currentNag, setCurrentNag] = useState('');
   const [timeOnApp, setTimeOnApp] = useState(0);

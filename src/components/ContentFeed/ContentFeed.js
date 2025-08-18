@@ -57,7 +57,7 @@ function ContentFeed(){
         <div className="content-feed-container">
             <h2 className="content-feed-title">Your Scroll Replacement Feed</h2>
             <div className="content-feed-input-section">
-                <button className="content-feed-button" onClick={getRandomContent} >{isLoading ? 'Getting your brain food... 🧠' : 'Give Me Something Better Than Social Media! 🎲'}</button>
+                <button className="content-button" onClick={getRandomContent} >{isLoading ? 'Getting your brain food... 🧠' : 'Give Me Something Better Than Social Media! 🎲'}</button>
             </div>
             <div className="content-feed-answer">
                 <p className="answer-text">{currentContent}</p>
